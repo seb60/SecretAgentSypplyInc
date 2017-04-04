@@ -1,0 +1,32 @@
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+.container {
+    max-width: 960px;
+    display: flex;
+}
+
+#logo {
+    display: flex;
+    background-color: black;
+    color: white;
+    align-items: center;
+    width: 100%;
+    padding: 0.75rem;
+    height: auto;
+}
+
+#logo img {
+    height: 1rem;
+    width: 1rem;
+    padding-right: 15px;
+}
+
+#logo .container {
+    display: flex;
+    align-items: center;
+    padding: 12px 0px 12px 0.5em;
+}
