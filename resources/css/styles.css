@@ -1,12 +1,23 @@
 body {
     font-family: helvetica, arial, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .container {
+    max-width: 100%;
+    height: auto;
+    justify-content: center;
+}
+
+.container#logo {
     max-width: 960px;
-    display: flex;
+}
+
+.site-container {
+    max-width: 960px;
 }
 
 #logo {
@@ -20,13 +31,41 @@ body {
 }
 
 #logo img {
-    height: 1rem;
-    width: 1rem;
-    padding-right: 15px;
+    height: 1.5rem;
+    width: auto;
+    padding-right: 1rem;
+    padding-left: 0.5rem;
 }
 
-#logo .container {
+#main-banner {
+    background-image: url("../images/moto.jpeg");
+    height: 25rem;
+}
+
+.navigation {
     display: flex;
-    align-items: center;
-    padding: 12px 0px 12px 0.5em;
+    color: white;
+    background-color: firebrick;
+    padding: 0.75rem 0rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#product-grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation a {
+    color: white;
+}
+
+.items {
+    width: 30%;
+}
+
+.items p {
+    background: black;
+    color: white;
+    text-align: center;
 }
