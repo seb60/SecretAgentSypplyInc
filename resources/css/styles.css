@@ -7,57 +7,75 @@ body {
 }
 
 .container {
-    max-width: 100%;
-    height: auto;
-    justify-content: center;
-}
-
-.container#logo {
     max-width: 960px;
+    margin: 0 auto;
 }
 
-.site-container {
-    max-width: 960px;
-}
-
-#logo {
-    display: flex;
+.logo {
     background-color: black;
     color: white;
-    align-items: center;
-    width: 100%;
-    padding: 0.75rem;
-    height: auto;
 }
 
-#logo img {
-    height: 1.5rem;
+.logo .container {
+    display: flex;
     width: auto;
+    align-items: center;
+    padding: 0.66rem 0;
+}
+
+.logo img {
+    height: 1.5rem;
     padding-right: 1rem;
     padding-left: 0.5rem;
 }
 
-#main-banner {
+.main-banner {
     background-image: url("../images/moto.jpeg");
     height: 25rem;
+    background-size: cover;
+}
+
+#banner-text {
+    color: white;
+    background-color: black;
+    padding: 2rem 0 2rem 3rem;
+    align-items: center;
+    width: 20rem;
+    position: relative;
+    top: 9rem;
+}
+
+#banner-text h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 0.25rem;
+}
+
+#banner-text h1 {
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .navigation {
-    display: flex;
     color: white;
     background-color: firebrick;
-    padding: 0.75rem 0rem;
-    width: 100%;
+}
+
+.navigation .container {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding:0.75rem 0;
+}
+
+.navigation a {
+    color: white;
 }
 
 #product-grid {
     display: flex;
     justify-content: space-between;
-}
-
-.navigation a {
-    color: white;
 }
 
 .items {
