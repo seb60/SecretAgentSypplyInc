@@ -71,19 +71,66 @@ body {
 
 .navigation a {
     color: white;
+    text-decoration: none;
 }
 
-#product-grid {
+.container .product-grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+
+.item {
+    width: 30%;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.images {
+    height: 9rem;
+    max-width: 8rem;
+    padding: 2rem 0;
+}
+
+.item-description {
+    background: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.hoursLocation {
     display: flex;
     justify-content: space-between;
 }
 
-.items {
-    width: 30%;
+.storeInfo {
+   width: 35%;
+   padding-bottom: 4rem;
 }
 
-.items p {
+.info-description {
     background: black;
     color: white;
-    text-align: center;
+    width: 100%;
+    padding: 1rem 0 1rem 2rem;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    height: 5rem;
+    display: flex;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+    .item.glasses {
+        display: none;
+    }
 }
